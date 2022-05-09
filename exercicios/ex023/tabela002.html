@@ -15,6 +15,13 @@
             border-collapse: collapse;
         }
 
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey
+        }
         td,th {
             border:1px solid black;
             padding: 6px;
@@ -38,6 +45,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIAS PARA TABELAS GRANDES
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -46,26 +54,50 @@
             TR, TD, TH
     -->
     <table>
+        <caption>
+            População das Unidades federativas Brasileira
+        </caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tbody>
             <td>São Paulo</td>
-            <td  class="numero">45 919 049</td>
+            <td  class="numero">46 649 132</td>
             <tr>
                 <td>Minas Gerais</td>
-                <td class="numero">21 168 791</td>
+                <td class="numero">21 441 923</td>
             </tr>
             <td>Rio de Janeiro</td>
-            <td class="numero">17 264 943</td>
+            <td class="numero">17 463 349</td>
+            <tr>
+                <td>Bahia</td>
+                <td>14 985 274</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11 466 630</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 674 793</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>9 240 580</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>000000</strong></td>
             </tr>
         </tfoot>
     </table>
 </body>
+<footer>Dados de 2021</footer>
 </html>
