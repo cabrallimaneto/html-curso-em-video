@@ -13,6 +13,8 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            /* PARA COLAR UM CABEÇAHLHO E PRECISO FAZER ISSO*/
+            position: relative;
         }
 
 
@@ -34,6 +36,11 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
         }
                         /* codigo 2n = acada duas linhas um style sera aplicado (odd para impar)*/
         tbody > tr:nth-child(2n){
