@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabela</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table.tabela1 {
+            width: 300px;
+            height: 200px;
+        }
+        
+        td {
+            /* linhas das bordas*/
+            border: 1px solid black;
+            width: 60px;
+            /* textos no meio */
+            text-align: center;
+        }
+
+        td.coluna {
+            height: 40px;
+            background-color:  lightgrey;
+        }
+
+        td.linhas{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+    <h1>Tabela 2</h1>
+<body>
+    <table>
+        <tr>
+            <td colspan="4" class="coluna">A</td>
+            <td rowspan="4" class="linhas">B</td>
+
+            
+        </tr>
+        <tr>
+            <td rowspan="4" class="linhas">C</td>c</td>
+            <td >D</td>
+            <td >E</td>
+            <td >F</td>
+        </tr>
+        <tr>
+            <td >G</td>
+            <td >H</td>
+            <td >I</td>
+
+        </tr>
+        <tr>
+            <td >J</td>
+            <td >L</td>
+            <td >M</td>
+
+        </tr>
+        <tr>
+            <td colspan="4" class="coluna">N</td>
+
+
+        </tr>
+    </table>
+</body>
+</html>
